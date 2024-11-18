@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navigation bar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--navbar content-->
+    <header class="w-screen h-screen">
+      <nav
+        class="z-40 flex justify-between items-center px-12 w-full h-24 absolute top-0 left-0 bg-white"
+      >
+        <div class="logo">
+          <a href="#"><img class="w-20" src="/img/comera-logo.svg" alt="" /></a>
+        </div>
+
+        <div class="nav-list hidden md:block">
+          <ul class="flex text-xl font-normal">
+            <li class="mr-4 border-b-4 border-green-500 pb-4">
+              <a class="" href="">Home</a>
+            </li>
+            <li class="mr-4 text-gray-400">
+              <a href="">Features</a>
+            </li>
+            <li class="mr-4 text-gray-400"><a href="">Download</a></li>
+            <li class="mr-4 text-gray-400"><a href="">Security</a></li>
+            <li class="mr-4 text-gray-400"><a href="">FAQs</a></li>
+          </ul>
+        </div>
+        <div
+          id="menu"
+          class="menu-btn w-7 h-7 flex flex-col justify-between md:hidden"
+        >
+          <div class="line-1 w-10 h-1 bg-black"></div>
+          <div class="line-2 w-10 h-1 bg-black"></div>
+          <div class="line-3 w-10 h-1 bg-black"></div>
+        </div>
+      </nav>
+      <img
+        class="w-full h-full bg-cover bg-center"
+        src="/img/gal-5.jpeg"
+        alt=""
+      />
+      <div
+        id="topnav"
+        class="topnav h-3/4 w-full flex justify-center items-center absolute top-0 left-0 md:hidden"
+      >
+        <ul class="flex flex-col justify-between text-xl font-normal h-72">
+          <li class="mr-4 border-b-4 text-gray-400 border-green-500 pb-4">
+            <a class="" href="">Home</a>
+          </li>
+          <li class="mr-4 text-gray-400">
+            <a href="">Features</a>
+          </li>
+          <li class="mr-4 text-gray-400"><a href="">Download</a></li>
+          <li class="mr-4 text-gray-400"><a href="">Security</a></li>
+          <li class="mr-4 text-gray-400"><a href="">FAQs</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <script src="/index.js"></script>
+  </body>
+</html>

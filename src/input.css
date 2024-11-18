@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-btn div {
+  transition: all 0.5s;
+}
+
+.openmenu .line-1 {
+  transform: translateY(13px) rotate(45deg);
+}
+
+.openmenu .line-2 {
+  opacity: 0;
+}
+
+.openmenu .line-3 {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.topnav {
+  padding-top: 50px;
+  margin-top: -1000px;
+  background-color: black;
+}
+
+.mobilemenu {
+  margin-top: 0px;
+  transition: all 1s ease;
+}
